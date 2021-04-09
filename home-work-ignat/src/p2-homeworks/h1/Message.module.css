@@ -1,0 +1,64 @@
+.message {
+  display: flex;
+  background-color: rgb(206, 219, 170);
+  padding: 10px;
+  position: relative;
+}
+
+.avatarImage img {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  position: absolute;
+  bottom: 5px;
+}
+.avatarImage {
+  width: 70px;
+  position: relative;
+}
+
+.messageContent {
+  height: 100%;
+  max-width: 40%;
+  padding: 15px;
+  margin-left: 18px;
+  /* margin-left: 20px; */
+  background-color: rgb(119, 155, 138);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.triangle {
+  height: 40px;
+  width: 40px;
+  /* background-color: red; */
+  overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+
+.triangle:before {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 60%;
+}
+.triangle:before {
+  bottom: 0;
+  right: 0;
+  box-shadow: 50px 50px 0 0 rgb(119, 155, 138);
+}
+
+h4 {
+  margin-top: 0;
+  color: rgb(46, 46, 117);
+}
+
+.time {
+  text-align: right;
+  margin-bottom: 0;
+}
