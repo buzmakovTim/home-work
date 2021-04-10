@@ -1,3 +1,48 @@
-.someClass {
+.container {
+  display: flex;
+  flex-direction: row;
+}
 
+.titleContainer {
+  min-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.priorityContainer {
+  margin-left: 20px;
+  min-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.deleteButtonContainer {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.deleteButtonContainer button {
+  background-color: rgb(136, 30, 71);
+  color: white;
+  border-radius: 5px;
+}
+.deleteButtonContainer button:focus {
+  outline: none;
+}
+
+.low {
+  color: seagreen;
+}
+
+.middle {
+  color: rgb(158, 135, 2);
+}
+
+.high {
+  color: red;
+}
+
+.rating {
+  color: blue;
 }
