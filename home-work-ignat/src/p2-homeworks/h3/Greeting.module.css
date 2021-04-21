@@ -1,7 +1,28 @@
-.someClass {
-
+.inputClass {
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
 .error {
-    border: 1px solid red;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.incorrectInput {
+  color: brown;
+}
+
+.button {
+  margin-right: 10px;
+  background-color: rgb(111, 135, 179);
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 3px 9px;
+  color: white;
 }

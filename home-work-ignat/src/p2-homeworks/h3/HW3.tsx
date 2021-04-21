@@ -14,13 +14,18 @@ function HW3() {
 
   const addUserCallback = (name: string) => {
     // need to fix any
-    setUsers([]); // need to fix
+    let userToAdd: UserType = { _id: v1(), name: name };
+    users.push(userToAdd);
+
+    setUsers([...users]); // need to fix
+    console.log('Add user Call Back ' + userToAdd._id + ' ' + userToAdd.name);
   };
 
   return (
     <div>
       <hr />
-      Homework 3{/*should work (должно работать)*/}
+      <h3>Homework 3</h3>
+      {/*should work (должно работать)*/}
       <GreetingContainer users={users} addUserCallback={addUserCallback} />
       <hr />
       {/*для личного творчества, могу проверить*/}

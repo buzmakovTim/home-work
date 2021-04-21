@@ -18,18 +18,24 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 }) => {
   // деструктуризация пропсов
   const [name, setName] = useState<string>('');
-  const [error, setError] = useState<number>(0);
+  const [error, setError] = useState<string>('');
 
   const setNameCallback = (e: string) => {
-    // need to fix any
     setName(e);
+    setError('');
   };
   const addUser = () => {
-    setName('');
-    alert(`Hello  ${name}!`);
+    if (name.trim() !== '') {
+      addUserCallback(name.trim());
+      setName('');
+    } else {
+      setError('Incorrect input!');
+    }
+
+    //alert(`Hello  ${name}!`);
   };
 
-  const totalUsers = 0; // need to fix
+  const totalUsers = users.length; // need to fix
 
   return (
     <Greeting
