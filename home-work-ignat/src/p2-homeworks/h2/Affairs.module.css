@@ -1,48 +1,82 @@
 .container {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .titleContainer {
-  min-width: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    min-width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .priorityContainer {
-  margin-left: 20px;
-  min-width: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+    margin-left: 20px;
+    min-width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .deleteButtonContainer {
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .deleteButtonContainer button {
-  background-color: rgb(136, 30, 71);
-  color: white;
-  border-radius: 5px;
+    background-color: rgb(136, 30, 71);
+    color: white;
+    border-radius: 5px;
 }
 .deleteButtonContainer button:focus {
-  outline: none;
+    outline: none;
 }
 
 .low {
-  color: seagreen;
+    color: seagreen;
 }
 
 .middle {
-  color: rgb(158, 135, 2);
+    color: rgb(158, 135, 2);
 }
 
 .high {
-  color: red;
+    color: red;
 }
 
 .rating {
-  color: blue;
+    color: blue;
+}
+
+.defaultButton {
+    margin: 10px;
+    background-color: rgb(111, 135, 179);
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: white;
+}
+.defaultButton:hover {
+    margin: 10px;
+    background-color: rgb(123, 147, 190);
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: white;
+}
+.defaultButton:active {
+    margin: 10px;
+    background-color: rgb(111, 135, 179);
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: rgb(79, 84, 124);
+}
+
+.selectedButton {
+    margin: 10px;
+    background-color: rgb(69, 98, 151);
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: white;
 }
